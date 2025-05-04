@@ -559,83 +559,72 @@
     background-color: var(--color-7);
     padding: 100px 0px;
 }
-.section-8 .row .col-xl-12 .inner-title{
+.section-8 .inner-title{
     font-size: 28px;
+    font-weight: 600;
     margin-bottom: 20px;
-    font-weight: 500;
 }
-.section-8 .row .col-xl-12 .inner-desc{
-    color: var(--color-3);
+.section-8 .inner-desc{
     font-size: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    color: var(--color-3);
 }
-.section-8 .row .col-xl-4 .inner-title{
+.section-8 .inner-title-1{
     font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-weight: 600;
 }
-.section-8 .row .col-xl-4 .inner-desc-1{
+.section-8 .inner-desc-1{
     font-size: 14px;
     color: var(--color-3);
-    font-weight: 400;
-    margin-bottom: 30px;
 }
-.section-8 .row .col-xl-4 .inner-desc-2{
-    font-size: 14px;
-    color: var(--color-3);
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.form-control{
-    padding: 6px 20px;
+.section-8 input{
     border-radius: 30px;
+    padding: 6px 20px;
     height: 50px;
+    margin-bottom: 15px;
 }
-.css-text-area{
-    position: relative;
-}
-textarea.form-control{
-    width: 730px;
-    height: 150px;
-    border-radius: 20px;
+.section-8 textarea{
     resize: none;
+    border-radius: 30px;
+    height: 150px;
     padding: 20px;
-    position: absolute;
-    top: -169px;
-    right: -365px;
+}
+
+.section-8 .inner-button{
+    margin-top: 30px;
+    position: relative;
+    left: -100px;
+}
+.section-8 .hide-desc{
+    display: none;
 }
 @media (max-width: 1199.98px){
-    textarea.form-control{
-    width: 610px;
-    height: 150px;
-    right: -305px;
+    .section-8 .inner-button{
+        left: -70px;
     }
 }
 @media (max-width: 991.98px){
-    .section-8 .col-md-12 .inner-box{
-        text-align: center;
-    }
-    textarea.form-control{
-        top: initial;
-        right: initial;
-        width: 690px;
-    }
-    .section-8{
-        padding-bottom: 250px;
-    }
-    .section-8 .inner-button a{
-        position: relative;
-        bottom: -164px;
+    .section-8 .inner-button{
+        left: -36px;
     }
 }
 @media (max-width: 767.98px){
-    textarea.form-control{
-        width: 510px;
+    .section-8 .inner-desc-1{
+        display: none;
     }
-}
-@media (max-width: 575.98px){
-    textarea.form-control{
-        max-width: 100%;
+    .section-8 .hide-desc{
+        display: inline-block;
+        font-size: 14px;
+        color: var(--color-3);
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .section-8 input{
+        margin-bottom: 5px;
+    }
+    .section-8 .inner-button{
+        left: 0px;
     }
 }
 /* end section 8 */
